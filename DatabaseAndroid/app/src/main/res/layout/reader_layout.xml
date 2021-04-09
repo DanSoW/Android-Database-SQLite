@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReaderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal|vertical"
+                android:scrollbarStyle="outsideInset"
+                android:fillViewport="true">
+
+                <HorizontalScrollView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scrollbars="horizontal|vertical">
+
+                    <TableLayout
+                        android:id="@+id/tableReader"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/cardview_shadow_start_color"
+                        android:scrollbars="vertical"
+                        android:isScrollContainer="true">
+
+                        <TableRow>
+
+                            <TextView
+                                android:background="#229999"
+                                android:layout_width="152dp"
+                                android:gravity="center_horizontal"
+                                android:text="Паспортные данные"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"></TextView>
+
+                            <TextView
+                                android:background="#229999"
+                                android:layout_width="152dp"
+                                android:gravity="center_horizontal"
+                                android:text="Домашний адрес"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"></TextView>
+
+                            <TextView
+                                android:background="#229999"
+                                android:layout_width="105dp"
+                                android:gravity="center_horizontal"
+                                android:text="ФИО"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"></TextView>
+                        </TableRow>
+                    </TableLayout>
+
+                </HorizontalScrollView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="22dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp">
+
+            <LinearLayout
+                android:layout_width="13dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="319dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:paddingTop="25px"
+                        android:text="Паспортные данные: "
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:id="@+id/pass_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25px"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:paddingTop="25px"
+                        android:text="Домашний адрес: "
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:id="@+id/home_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:inputType="text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25px"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:paddingTop="25px"
+                        android:text="ФИО: "
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"></TextView>
+
+                    <EditText
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:inputType="text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25px"></EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="Добавить запись"
+                android:textSize="30px"></Button>
+            <Button
+                android:layout_marginLeft="20px"
+                android:id="@+id/btnRefactor"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="Изменить запись"
+                android:textSize="30px"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:text="Удалить запись"
+                android:textSize="30px"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/solution1Col1"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/solution1Col2"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/solution1Col3"
+        android:layout_width="105dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/solution1Col4"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/solution1Col5"
+        android:layout_width="105dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/solution1Col6"
+        android:layout_width="105dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+</TableRow>

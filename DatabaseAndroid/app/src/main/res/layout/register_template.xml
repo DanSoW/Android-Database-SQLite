@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/registerCol1"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/registerCol2"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/registerCol3"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/registerCol4"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/registerCol5"
+        android:layout_width="152dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/black"></TextView>
+</TableRow>
